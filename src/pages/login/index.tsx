@@ -23,6 +23,7 @@ export const LoginPage = () => {
                                 id="username"
                                 required
                                 value={username}
+                                autoComplete='off'
                                 onChange={(e) => setUsername(e.target.value)}
                                 className="input-field"
                             />
