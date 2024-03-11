@@ -1,0 +1,46 @@
+.modal-container {
+    width: 236px;
+    border-radius: 16px;
+    box-shadow: 0px 3px 10px #E6E6E6;
+    background-color: #FFFFFF;
+    height: 108px;
+    position: absolute;
+    bottom: 80px;
+    right: 80px;
+    animation: moveNotification 0.8s ease-in-out;
+    z-index: 100;
+    padding: 20px;
+    line-height: 20px;
+}
+
+.modal-container__text {
+    font-size: 14px;
+
+}
+
+.close {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-weight: bold;
+    z-index: 100;
+    width: 22px;
+    height: 22px;
+    padding: 5px;
+    text-align: center;
+    background-color: #DD3542;
+}
+
+@keyframes moveNotification {
+    0% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+
+    }
+}
